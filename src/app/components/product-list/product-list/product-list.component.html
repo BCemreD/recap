@@ -1,0 +1,17 @@
+<div
+  *ngIf="
+    dataLoaded && (productDetails | filterProductDetail: productFilterText).length == 0
+  "
+  class="alert alert-info w-100"
+  role="alert"
+>
+  Not exist filter yet!
+</div>
+<div id="products-list" class="row mx-3">
+  <app-loading-spinner *ngIf="!dataLoaded"></app-loading-spinner>
+  <app-product-card
+    *ngFor="let productDetail of productDetails | filterProductDetail: productFilterText"
+    [productDetail]="productDetail"
+    class="{{ class }} p-3 pt-0"
+  ></app-product-card>
+</div>

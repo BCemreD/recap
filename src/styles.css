@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+:host {
+  font-family: "Arial";
+}
+
+
+.bg-transparent {
+  background: transparent !important;
+  border: transparent !important;
+}
+
+.bg-primary-gradient {
+  background: rgb(2, 188, 196);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 188, 196, 1) 0%,
+    rgba(0, 173, 181, 1) 45%
+  );
+}
+
+
+
+.rounded-1 {
+  border-radius: 0.5rem !important;
+}
+
+.rounded-2 {
+  border-radius: 1rem !important;
+}
+
+.rounded-3 {
+  border-radius: 2rem !important;
+}
+
+.flip-vertical {
+  transform: scaleY(-1);
+}
+
+.text-primary {
+  color: #00adb5 !important;
+}
+
+.w-70 {
+  width: 70% !important;
+}
+
+.text-shadow-xl {
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.shadow-xl {
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%) !important;
+}
